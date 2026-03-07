@@ -14,7 +14,7 @@ class ListaEncadeada:
         return self.inicio_lista is None #Verifica se está vazio
 
     
-    def Adicionar(self, nome, telefone):
+    def adicionar(self, nome, telefone):
         dado = f"{nome} - {telefone}" 
         novo = Node(dado) # Ele pega o conteúdo da variável dado na Classe Node
         #Caso estiver vazio, o primeiro elemento é adicionado. Caso o contrário, segue adicionando em outras posições
@@ -25,7 +25,7 @@ class ListaEncadeada:
             self.fim_lista.proximo = novo
             self.fim_lista = novo
 
-    def Exibir(self):
+    def exibir(self):
         atual = self.inicio_lista #Atualizando os dados
         while atual: #Enquanto houver dados adicionados, mostra
             print(atual.dado)
@@ -39,13 +39,13 @@ class ListaEncadeada:
 l = ListaEncadeada()    
 
 print("Anterior a remoção:")
-l.Adicionar("José", "999999-99")
-l.Adicionar("Pedro", "23213-99")
-l.Adicionar("Lucas", "45546-99")
-l.Exibir()
+l.adicionar("José", "999999-99")
+l.adicionar("Pedro", "23213-99")
+l.adicionar("Lucas", "45546-99")
+l.exibir()
 print("\nApós a remoção:")
 l.remover_inicio()
-l.Exibir()
+l.exibir()
 
 
 

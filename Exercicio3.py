@@ -26,8 +26,7 @@ while True:
                 s.push(tarefa)
 
                 print("\nTarefa Adicionada")
-                print(tarefa)
-                
+                print(s.items)
         case "N":
             print("Última Tarefa adicionada: ", s.peek())
         
