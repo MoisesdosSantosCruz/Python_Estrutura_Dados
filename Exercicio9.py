@@ -84,15 +84,15 @@ l.adicionar_Inicio("Pedro", "23213-99", "Pedro@gmail.com")
 l.adicionar_Inicio("Lucas", "45546-99", "Lucas@gmail.com")
 l.exibir_tras_para_frente()
 print(l.esta_Vazia())
-print(l.tamanho())
-'''
+print(l.tamanho_inicio())'''
 
-'''print("Nome - Telefone - Email\n")
+
+print("Nome - Telefone - Email\n")
 l.adicionar_fim("Miguel", "12312323-55", "Miguel@gmail.com")
 l.remover_fim()
 l.adicionar_fim("João", "5432342-88", "João@gmail.com")
 l.adicionar_fim("Lúcia", "23231245-44", "Lucia@gmail.com")
 l.exibir_frente_para_tras()
 print(l.tamanho_fim())
-'''
+
        

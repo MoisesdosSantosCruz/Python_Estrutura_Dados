@@ -46,6 +46,3 @@ l.exibir()
 print("\nApós a remoção:")
 l.remover_inicio()
 l.exibir()
-
-
-

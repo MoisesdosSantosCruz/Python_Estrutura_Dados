@@ -37,10 +37,3 @@ if(verifica_balanceamento(ex)):
     print("Balanceada")
 else:
     print("Não balanceada")    
-
-
-        
-
-    
-
-

@@ -32,5 +32,6 @@ while True:
         
         case "Q":
             print("Sair.")
+            break
 
     

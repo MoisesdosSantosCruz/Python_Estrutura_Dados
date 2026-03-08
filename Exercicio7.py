@@ -27,10 +27,3 @@ q.enqueue("Marcos", 2, "Moderado")
 q.enqueue("Lucas",1, "Urgente")
 print(q.isEmpity())
 print(q.exibir())
-
-
-
-
-
-
-
