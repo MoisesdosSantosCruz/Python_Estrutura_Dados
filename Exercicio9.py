@@ -49,14 +49,20 @@ class ListaEncadeadaDuplicada:
             atual = atual.anterior
 
     def remover_inicio(self):
-        removido = self.inicio_lista.dado # Com a variavel, guarda o primeiro dado
-        self.inicio_lista = self.inicio_lista.proximo # Substitui o primeiro pelo segundo
-        return removido
+        if self.esta_Vazia():
+            print ("Sem elemento")
+        else:
+            removido = self.inicio_lista.dado # Com a variavel, guarda o primeiro dado
+            self.inicio_lista = self.inicio_lista.proximo # Substitui o primeiro pelo segundo
+            return removido
     
     def remover_fim(self):
-        removido = self.fim_lista.dado # Com a variavel, guarda o primeiro dado
-        self.fim_lista = self.fim_lista.proximo # Substitui o primeiro pelo segundo
-        return removido
+        if self.esta_Vazia():
+            print( "Sem elemento")
+        else:
+            removido = self.fim_lista.dado # Com a variavel, guarda o primeiro dado
+            self.fim_lista = self.fim_lista.proximo # Substitui o primeiro pelo segundo
+            return removido
     
     def tamanho_inicio(self):
         contador = 0
@@ -76,7 +82,7 @@ class ListaEncadeadaDuplicada:
 
 l = ListaEncadeadaDuplicada()
 
-'''print("Nome - Telefone - Email\n")
+print("Nome - Telefone - Email\n")
 print(l.esta_Vazia())
 l.adicionar_Inicio("José", "999999-99", "José@gmail.com")
 l.remover_inicio()
@@ -84,15 +90,15 @@ l.adicionar_Inicio("Pedro", "23213-99", "Pedro@gmail.com")
 l.adicionar_Inicio("Lucas", "45546-99", "Lucas@gmail.com")
 l.exibir_tras_para_frente()
 print(l.esta_Vazia())
-print(l.tamanho_inicio())'''
+print(l.tamanho_inicio())
 
 
-print("Nome - Telefone - Email\n")
+'''print("Nome - Telefone - Email\n")
 l.adicionar_fim("Miguel", "12312323-55", "Miguel@gmail.com")
 l.remover_fim()
 l.adicionar_fim("João", "5432342-88", "João@gmail.com")
 l.adicionar_fim("Lúcia", "23231245-44", "Lucia@gmail.com")
 l.exibir_frente_para_tras()
-print(l.tamanho_fim())
+print(l.tamanho_fim())'''
 
        
